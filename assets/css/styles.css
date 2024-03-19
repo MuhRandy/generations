@@ -1,0 +1,10 @@
+img {
+  width: 100dvw;
+  height: 70dvh;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+figcaption {
+  text-align: center;
+}
