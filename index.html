@@ -5,207 +5,1397 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Generasi</title>
 
+    <!-- My own style -->
     <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Icon from Tabler Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <h1>Generasi</h1>
-      <figure>
-        <img src="assets/img/generations.jpg" alt="Generations" />
-        <figcaption>
-          Photo by
-          <a
-            href="https://unsplash.com/@nixcreative?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-            >Tyler Nix</a
-          >
-          on
-          <a
-            href="https://unsplash.com/photos/people-standing-on-shore-during-golden-hour-V3dHmb1MOXM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-            >Unsplash</a
-          >
-        </figcaption>
-      </figure>
-      <p>
-        Generasi-generasi adalah kelompok-kelompok demografis yang memiliki ciri
-        khas tertentu dan sering kali dibedakan oleh peristiwa sejarah,
-        perkembangan sosial, dan budaya yang memengaruhi pengalaman hidup
-        mereka. Berikut adalah beberapa generasi yang sering dikenal dan
-        ciri-ciri umum yang sering terkait dengan mereka:
-      </p>
+      <article id="jumbotron" class="jumbotron">
+        <h1>Generasi</h1>
+        <p>
+          Generasi-generasi adalah kelompok-kelompok demografis yang memiliki
+          ciri khas tertentu dan sering kali dibedakan oleh peristiwa sejarah,
+          perkembangan sosial, dan budaya yang memengaruhi pengalaman hidup
+          mereka.
+        </p>
+      </article>
+      <nav>
+        <ul>
+          <li><a href="#silent-generation">Generasi Gagak</a></li>
+          <li>
+            <a href="#baby-boomer">Baby Boomer</a>
+          </li>
+          <li>
+            <a href="#x-generation">Generasi X</a>
+          </li>
+          <li><a href="#millenial">Millennial</a></li>
+          <li><a href="#z-generation">Generasi Z</a></li>
+          <li><a href="#alpha-generation">Generasi Alpha</a></li>
+        </ul>
+
+        <!-- Menu for device with widescreen 768px and below -->
+
+        <!-- Menu Icon -->
+        <i class="ti ti-menu-2 menu-icon" onclick="openMenu()"></i>
+
+        <div class="menu" onclick="openMenu()">
+          <ul>
+            <h2>
+              Menu
+              <hr />
+            </h2>
+            <li>
+              <a href="#silent-generation">Generasi Gagak</a>
+            </li>
+            <hr />
+            <li>
+              <a href="#baby-boomer">Baby Boomer</a>
+            </li>
+            <hr />
+            <li>
+              <a href="#x-generation">Generasi X</a>
+            </li>
+            <hr />
+            <li>
+              <a href="#millenial">Millennial</a>
+            </li>
+            <hr />
+            <li>
+              <a href="#z-generation">Generasi Z</a>
+            </li>
+            <hr />
+            <li>
+              <a href="#alpha-generation">Generasi Alpha</a>
+            </li>
+            <hr />
+          </ul>
+        </div>
+        <!--  -->
+
+        <div class="darkmode-toggle" onclick="toggle()">
+          <!-- Sun Icon -->
+          <i class="ti ti-sun-filled sun"></i>
+
+          <!-- Moon Icon -->
+          <i class="ti ti-moon-filled moon"></i>
+        </div>
+      </nav>
     </header>
 
-    <main id="content">
-      <article>
-        <h2>Generasi Gagak</h2>
-        <figure>
-          <img src="assets/img/silent-generation.jpg" alt="silent-generation" />
-          <figcaption>
-            Photo by
-            <a
-              href="https://unsplash.com/@unseenhistories?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-              >Unseen Histories</a
-            >
-            on
-            <a
-              href="https://unsplash.com/photos/a-crowd-of-people-standing-around-each-other-VZCHYWNLfG8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-              >Unsplash</a
-            >
-          </figcaption>
-        </figure>
-        <p>
-          Generasi ini juga dikenal sebagai Silent Generation. Mereka lahir
-          sekitar tahun 1928 hingga 1945 dan mengalami masa dewasa selama
-          tahun-tahun pasca-Depresi Besar dan Perang Dunia II. Karakteristik
-          mereka termasuk nilai-nilai tradisional, kesetiaan kepada otoritas,
-          dan keterbatasan teknologi.
-        </p>
-      </article>
+    <main>
+      <div id="content">
+        <article id="silent-generation">
+          <h2>Generasi Gagak</h2>
+          <figure>
+            <img
+              class="img-position-center"
+              src="assets/img/silent-generation.jpg"
+              alt="silent-generation"
+            />
+            <figcaption>
+              Photo by
+              <a
+                href="https://unsplash.com/@unseenhistories?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Unseen Histories</a
+              >
+              on
+              <a
+                href="https://unsplash.com/photos/a-crowd-of-people-standing-around-each-other-VZCHYWNLfG8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Unsplash</a
+              >
+            </figcaption>
+          </figure>
+          <p>
+            Generasi ini juga dikenal sebagai <em>Silent Generation</em>. Mereka
+            lahir sekitar tahun 1928 hingga 1945 dan mengalami masa dewasa
+            selama tahun-tahun pasca-Depresi Besar dan Perang Dunia II.
+            Karakteristik mereka termasuk nilai-nilai tradisional, kesetiaan
+            kepada otoritas, dan keterbatasan teknologi.
+          </p>
 
-      <article>
-        <h2>Baby Boomer</h2>
-        <figure>
-          <img
-            src="assets/img/baby-boomer.jpg"
-            alt="Marchers with signs at the March on Washington, 1963"
-          />
-          <figcaption>
-            Photo by
-            <a
-              href="https://unsplash.com/@unseenhistories?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-              >Unseen Histories</a
-            >
-            on
-            <a
-              href="https://unsplash.com/photos/marchers-holding-signs-demanding-the-right-to-vote-at-the-march-on-washington-9RbdjQ3nCEk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-              >Unsplash</a
-            >
-          </figcaption>
-        </figure>
-        <p>
-          Generasi ini lahir sekitar pertengahan tahun 1940-an hingga
-          pertengahan tahun 1960-an, setelah Perang Dunia II. Mereka mengalami
-          masa pertumbuhan ekonomi yang kuat dan berperan dalam perubahan sosial
-          yang signifikan, termasuk gerakan hak sipil, gerakan anti-perang, dan
-          revolusi seksual.
-        </p>
-      </article>
+          <section>
+            <h3></h3>
+            <p>
+              Generasi Gagak, juga dikenal sebagai <em>Silent Generation</em>,
+              adalah kelompok demografis yang lahir sekitar tahun 1928 hingga
+              1945. Nama <em>"Silent Generation"</em> sendiri biasanya merujuk
+              pada pendekatan yang lebih konservatif dan kurang vokal dari
+              generasi ini dalam politik dan aktivisme sosial dibandingkan
+              dengan generasi-generasi sebelum dan sesudahnya. Istilah
+              <em>"Silent Generation"</em> pertama kali muncul dalam artikel
+              yang ditulis oleh penulis dan sejarawan Time Magazine, Bruce
+              Forbes, pada tahun 1951. Forbes menggunakan istilah ini untuk
+              mendeskripsikan generasi ini sebagai yang lebih konservatif, tidak
+              terlibat dalam perubahan sosial yang besar, dan lebih fokus pada
+              pendidikan dan stabilitas keluarga.
+            </p>
 
-      <article>
-        <h2>Generasi X</h2>
-        <figure>
-          <img
-            src="assets/img/x-generation.jpg"
-            alt="Group of Women Standin On Each Other With Analog Camera"
-          />
-          <figcaption>
-            Photo by
-            <a
-              href="https://unsplash.com/@anniespratt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-              >Annie Spratt</a
-            >
-            on
-            <a
-              href="https://unsplash.com/photos/a-group-of-women-standing-next-to-each-other-mBpvd5I0h5k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-              >Unsplash</a
-            >
-          </figcaption>
-        </figure>
-        <p>
-          Generasi ini lahir sekitar pertengahan tahun 1960-an hingga awal
-          1980-an. Mereka sering dianggap sebagai generasi yang mengalami
-          transisi dari dunia analog ke dunia digital. Generasi X cenderung
-          lebih mandiri, skeptis terhadap otoritas, dan menghargai keseimbangan
-          antara kehidupan pribadi dan profesional.
-        </p>
-      </article>
+            <p>
+              Sementara itu, istilah "Generasi Gagak" sendiri tampaknya berasal
+              dari istilah <em>"Blackout Generation"</em> yang dicetuskan oleh
+              penulis dan jurnalis yang terkenal, Tom Brokaw, dalam bukunya yang
+              berjudul <em>"The Greatest Generation"</em> yang diterbitkan pada
+              tahun 1998. Tom Brokaw menggambarkan generasi ini sebagai
+              orang-orang yang tumbuh dewasa selama Depresi Besar dan Perang
+              Dunia II, yang menghadapi banyak kesulitan dan tantangan, namun
+              bertanggung jawab atas banyak prestasi dan perbaikan sosial dalam
+              sejarah Amerika Serikat.
+            </p>
 
-      <article>
-        <h2>Generasi Y (Millennial)</h2>
-        <figure>
-          <img
-            src="assets/img/millenials.jpg"
-            alt="three men laughing while looking in the laptop inside room"
-          />
-          <figcaption>
-            Photo by
-            <a
-              href="https://unsplash.com/@priscilladupreez?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-              >Priscilla Du Preez 🇨🇦</a
-            >
-            on
-            <a
-              href="https://unsplash.com/photos/three-men-laughing-while-looking-in-the-laptop-inside-room-XkKCui44iM0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-              >Unsplash</a
-            >
-          </figcaption>
-        </figure>
-        <p>
-          Generasi ini lahir sekitar awal 1980-an hingga pertengahan tahun
-          1990-an. Mereka adalah generasi yang tumbuh dengan teknologi digital
-          dan internet yang berkembang pesat. Generasi Y sering dianggap sebagai
-          generasi yang terliberalisasi secara sosial dan memiliki minat dalam
-          keseimbangan kerja-hidup serta keberlanjutan lingkungan.
-        </p>
-      </article>
+            <p>
+              Jadi, sumber istilah "Generasi Gagak" atau
+              <em>"Silent Generation"</em>
+              dapat ditelusuri kembali ke artikel Bruce Forbes pada tahun 1951
+              dan buku Tom Brokaw pada tahun 1998. Kedua istilah ini telah
+              digunakan secara luas dalam budaya populer dan penelitian
+              sosiologis untuk merujuk pada generasi yang lahir pada periode
+              tersebut.
+            </p>
+          </section>
 
-      <article>
-        <h2>Generasi Z</h2>
-        <figure>
-          <img
-            src="assets/img/gen-z.jpg"
-            alt="a group of people posing for a photo in front of a house"
-          />
-          <figcaption>
-            Photo by
-            <a
-              href="https://unsplash.com/@omarlopez1?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-              >Omar Lopez</a
-            >
-            on
-            <a
-              href="https://unsplash.com/photos/a-group-of-people-posing-for-a-photo-in-front-of-a-house-JEKprmVt86E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-              >Unsplash</a
-            >
-          </figcaption>
-        </figure>
-        <p>
-          Generasi ini lahir sekitar pertengahan tahun 1990-an hingga awal
-          2010-an. Mereka adalah generasi yang tumbuh dengan teknologi digital
-          yang sudah mapan, seperti media sosial dan ponsel pintar. Generasi Z
-          sering dikenal sebagai generasi yang inklusif, kreatif, dan aktif
-          dalam aktivisme sosial.
-        </p>
-      </article>
+          <section>
+            <h3></h3>
 
-      <article>
-        <h2>Generasi Alpha</h2>
-        <figure>
-          <img
-            src="assets/img/gen-alpha.jpg"
-            alt="children running while laughing"
-          />
-          <figcaption>
-            Photo by
-            <a
-              href="https://unsplash.com/@phammi?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-              >MI PHAM</a
-            >
-            on
-            <a
-              href="https://unsplash.com/photos/girl-running-while-laughing-xtd3zYWxEs4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-              >Unsplash</a
-            >
-          </figcaption>
-        </figure>
-        <p>
-          Generasi ini lahir sekitar awal 2010-an hingga pertengahan 2020-an.
-          Mereka adalah generasi pertama yang lahir dalam era di mana teknologi
-          digital sepenuhnya terintegrasi ke dalam kehidupan sehari-hari.
-          Meskipun masih muda, beberapa ciri yang telah teramati adalah
-          ketertarikan yang kuat pada teknologi dan kecenderungan terhadap
-          kesadaran lingkungan.
-        </p>
-      </article>
+            <p>
+              Generasi Gagak, yang juga dikenal sebagai
+              <em>Silent Generation</em>, lahir sekitar tahun 1928 hingga 1945.
+              Mereka adalah generasi yang tumbuh dewasa pada masa yang penuh
+              tantangan, termasuk masa Depresi Besar dan Perang Dunia II.
+              Berikut adalah beberapa kejadian sejarah penting yang terjadi pada
+              Generasi Gagak:
+            </p>
+
+            <ol>
+              <li>
+                <p>
+                  <strong>Depresi Besar (1929-1939):</strong> Generasi Gagak
+                  lahir dan tumbuh dewasa selama masa Depresi Besar di Amerika
+                  Serikat dan di seluruh dunia. Depresi ini ditandai dengan
+                  kemerosotan ekonomi yang parah, pengangguran massal, dan
+                  kesulitan ekonomi yang luas bagi banyak keluarga.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Perang Dunia II (1939-1945):</strong> Perang Dunia II
+                  adalah salah satu peristiwa paling berdampak pada generasi
+                  ini. Banyak dari mereka yang terlibat dalam perang sebagai
+                  prajurit, sementara yang lain mengalami ketidakpastian dan
+                  penderitaan di rumah selama perang. Peristiwa-peristiwa
+                  penting dalam Perang Dunia II termasuk Serangan Pearl Harbor,
+                  Pertempuran Stalingrad, Pertempuran Normandia, dan bom atom di
+                  Hiroshima dan Nagasaki.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Pemulihan Pasca-Perang:</strong> Setelah berakhirnya
+                  Perang Dunia II, Generasi Gagak menyaksikan periode pemulihan
+                  ekonomi pasca-perang yang kuat di Amerika Serikat dan di
+                  seluruh dunia. Ini termasuk program-program pemerintah seperti
+                  rencana Marshall yang membantu membangun kembali Eropa
+                  pasca-perang.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Pembentukan PBB:</strong> Pada tahun 1945,
+                  Perserikatan Bangsa-Bangsa (PBB) didirikan sebagai upaya untuk
+                  mencegah konflik internasional dan mempromosikan perdamaian
+                  dan kerjasama global. Generasi Gagak adalah saksi dari
+                  pembentukan lembaga ini dan pengaruhnya terhadap politik
+                  dunia.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Perubahan Sosial dan Budaya:</strong> Meskipun
+                  Generasi Gagak sering kali dianggap sebagai generasi yang
+                  lebih konservatif dan kurang vokal dalam aktivisme sosial,
+                  mereka juga menyaksikan perubahan sosial dan budaya yang
+                  signifikan. Ini termasuk perkembangan teknologi seperti
+                  televisi dan mobil, serta perubahan dalam peran gender dan
+                  nilai-nilai keluarga.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Pembentukan Negara-Negara Modern:</strong> Generasi
+                  Gagak menyaksikan pembentukan beberapa negara modern dan
+                  perubahan politik yang signifikan di seluruh dunia, termasuk
+                  kemerdekaan banyak negara kolonial di Asia dan Afrika serta
+                  pembentukan pemerintahan baru pasca-perang di Eropa.
+                </p>
+              </li>
+            </ol>
+
+            Kejadian-kejadian ini memberikan latar belakang sejarah yang penting
+            bagi Generasi Gagak dan membentuk pemahaman dan nilai-nilai mereka
+            tentang dunia. Meskipun sering kali dianggap sebagai generasi yang
+            kurang vokal, kontribusi dan pengalaman Generasi Gagak memiliki
+            dampak yang signifikan pada perkembangan dunia modern.
+          </section>
+        </article>
+
+        <article id="baby-boomer">
+          <h2><em>Baby Boomer</em></h2>
+          <figure>
+            <img
+              class="img-position-bottom"
+              src="assets/img/baby-boomer.jpg"
+              alt="Marchers with signs at the March on Washington, 1963"
+            />
+            <figcaption>
+              Photo by
+              <a
+                href="https://unsplash.com/@unseenhistories?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Unseen Histories</a
+              >
+              on
+              <a
+                href="https://unsplash.com/photos/marchers-holding-signs-demanding-the-right-to-vote-at-the-march-on-washington-9RbdjQ3nCEk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Unsplash</a
+              >
+            </figcaption>
+          </figure>
+          <p>
+            Generasi ini lahir sekitar pertengahan tahun 1940-an hingga
+            pertengahan tahun 1960-an, setelah Perang Dunia II. Mereka mengalami
+            masa pertumbuhan ekonomi yang kuat dan berperan dalam perubahan
+            sosial yang signifikan, termasuk gerakan hak sipil, gerakan
+            anti-perang, dan revolusi seksual.
+          </p>
+
+          <section>
+            <h3></h3>
+            <p>
+              Istilah <em>"Baby Boomer"</em> pertama kali digunakan pada awal
+              tahun 1970-an di Amerika Serikat untuk menggambarkan generasi
+              besar yang lahir setelah Perang Dunia II, terutama antara tahun
+              1946 dan 1964. Meskipun tidak ada sumber tunggal yang secara
+              khusus menciptakan istilah ini, penulis dan jurnalis mulai
+              menggunakan istilah <em>"Baby Boomer"</em> secara luas untuk
+              merujuk pada generasi besar yang lahir selama periode pascaperang
+              yang ditandai dengan pertumbuhan ekonomi yang kuat dan
+              meningkatnya angka kelahiran.
+            </p>
+
+            <p>
+              Berikut adalah beberapa sumber yang memberikan kontribusi pada
+              popularitas istilah <em>"Baby Boomer"</em>:
+            </p>
+
+            <ol>
+              <li>
+                <p>
+                  <strong>Penggunaan Media Massa:</strong> Media massa, seperti
+                  majalah, surat kabar, dan televisi, berperan penting dalam
+                  menyebarkan istilah <em>"Baby Boomer"</em> kepada masyarakat
+                  luas. Artikel-artikel dan program-program yang membahas
+                  tentang fenomena demografis ini membantu meningkatkan
+                  kesadaran tentang generasi ini.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Studi Demografis:</strong> Para demograf dan peneliti
+                  sosial telah melakukan studi tentang tren kelahiran dan
+                  demografi selama periode pascaperang. Hasil studi ini membantu
+                  mengidentifikasi dan memahami kelompok besar orang yang lahir
+                  selama periode tersebut, yang kemudian diberi label
+                  <em>"Baby Boomer"</em>.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Perubahan Sosial dan Ekonomi:</strong> Pertumbuhan
+                  ekonomi yang kuat dan perubahan sosial yang signifikan selama
+                  periode pascaperang mempengaruhi pola kelahiran dan struktur
+                  keluarga. Peristiwa-peristiwa ini, seperti kembalinya para
+                  prajurit dari Perang Dunia II dan meningkatnya tingkat
+                  urbanisasi, memberikan latar belakang yang penting bagi
+                  generasi ini.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Analisis Pasar:</strong> Dalam bidang pemasaran,
+                  perusahaan-perusahaan mulai menyadari potensi besar dari
+                  generasi besar ini sebagai pasar yang signifikan. Pemasar
+                  mulai memahami karakteristik dan preferensi konsumen Baby
+                  Boomer, yang kemudian membantu mempopulerkan istilah tersebut.
+                </p>
+              </li>
+            </ol>
+
+            <p>
+              Dengan demikian, istilah <em>"Baby Boomer"</em> muncul dari
+              berbagai sumber yang mencerminkan perubahan demografis, sosial,
+              dan ekonomi yang terjadi setelah Perang Dunia II. Meskipun tidak
+              ada sumber tunggal yang secara khusus menciptakan istilah ini,
+              popularitasnya telah berkembang seiring waktu dan menjadi bagian
+              penting dari bahasa dan budaya populer.
+            </p>
+          </section>
+
+          <section>
+            <h3></h3>
+
+            <p>
+              <em>Baby Boomer</em> adalah generasi yang lahir antara pertengahan
+              tahun 1940-an hingga pertengahan tahun 1960-an, setelah Perang
+              Dunia II. Generasi ini menyaksikan berbagai peristiwa sejarah yang
+              mempengaruhi dunia pada masanya. Berikut adalah beberapa kejadian
+              sejarah yang terjadi pada masa <em>Baby Boomer</em>:
+            </p>
+
+            <ol>
+              <li>
+                <p>
+                  <strong>Perang Dingin (1947-1991):</strong>
+                  <em>Baby Boomer</em> tumbuh dewasa dalam bayang-bayang Perang
+                  Dingin antara Blok Barat (AS dan sekutu-sekutunya) dan Blok
+                  Timur (Uni Soviet dan sekutu-sekutunya). Persaingan politik,
+                  militer, dan ekonomi antara dua blok ini mempengaruhi politik
+                  dan kehidupan internasional selama beberapa dekade.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Gerakan Hak Sipil (1950-an dan 1960-an):</strong> Baby
+                  Boomer menjadi saksi dan bagian dari gerakan hak sipil di
+                  Amerika Serikat, yang berjuang untuk mengakhiri diskriminasi
+                  rasial dan memperjuangkan hak-hak sipil yang setara bagi semua
+                  orang, terlepas dari warna kulit mereka.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Revolusi Seksual (1960-an dan 1970-an):</strong> Baby
+                  Boomer adalah bagian dari revolusi seksual yang terjadi pada
+                  tahun 1960-an dan 1970-an di banyak negara Barat. Perubahan
+                  sosial dan budaya ini mempengaruhi pandangan masyarakat
+                  tentang seksualitas, perkawinan, dan keluarga.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Pendaratan di Bulan (1969):</strong> Pada tahun 1969,
+                  <em>Baby Boomer</em> menyaksikan pendaratan manusia pertama di
+                  bulan ketika misi Apollo 11 mendaratkan astronot Neil
+                  Armstrong dan Buzz Aldrin di permukaan bulan.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Perubahan Teknologi dan Revolusi Digital:</strong>
+                  <em>Baby Boomer</em> menyaksikan perkembangan teknologi yang
+                  pesat, termasuk penemuan komputer, internet, dan telepon
+                  genggam. Mereka adalah bagian dari revolusi digital yang
+                  mengubah cara kita bekerja, berkomunikasi, dan hidup.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Krisis Minyak (1973 dan 1979):</strong>
+                  <em>Baby Boomer</em>
+                  mengalami dampak dari Krisis Minyak pada tahun 1970-an, yang
+                  menyebabkan lonjakan harga minyak dan resesi ekonomi di banyak
+                  negara.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Perang Vietnam (1955-1975):</strong> Banyak Baby
+                  Boomer terlibat dalam perang Vietnam, baik sebagai prajurit
+                  yang bertugas di medan perang maupun sebagai bagian dari
+                  gerakan anti-perang di rumah.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Pembunuhan Pemimpin Politik Penting:</strong> Baby
+                  Boomer menyaksikan pembunuhan beberapa pemimpin politik
+                  penting, seperti pembunuhan Presiden AS John F. Kennedy pada
+                  tahun 1963 dan pembunuhan Martin Luther King Jr. pada tahun
+                  1968.
+                </p>
+              </li>
+            </ol>
+
+            <p>
+              Kejadian-kejadian ini dan banyak lainnya membentuk pengalaman
+              hidup dan pandangan dunia <em>Baby Boomer</em>, serta mempengaruhi
+              peran mereka dalam pembentukan budaya, politik, dan masyarakat di
+              masa kini.
+            </p>
+          </section>
+        </article>
+
+        <article id="x-generation">
+          <h2>Generasi X</h2>
+          <figure>
+            <img
+              class="img-position-center"
+              src="assets/img/x-generation.jpg"
+              alt="Group of Women Standin On Each Other With Analog Camera"
+            />
+            <figcaption>
+              Photo by
+              <a
+                href="https://unsplash.com/@anniespratt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Annie Spratt</a
+              >
+              on
+              <a
+                href="https://unsplash.com/photos/a-group-of-women-standing-next-to-each-other-mBpvd5I0h5k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Unsplash</a
+              >
+            </figcaption>
+          </figure>
+          <p>
+            Generasi ini lahir sekitar pertengahan tahun 1960-an hingga awal
+            1980-an. Mereka sering dianggap sebagai generasi yang mengalami
+            transisi dari dunia analog ke dunia digital. Generasi X cenderung
+            lebih mandiri, skeptis terhadap otoritas, dan menghargai
+            keseimbangan antara kehidupan pribadi dan profesional.
+          </p>
+
+          <section>
+            <h3></h3>
+            <p>
+              Istilah "Generasi X" pertama kali diperkenalkan dan populer
+              melalui berbagai media, penelitian demografis, dan literatur pada
+              akhir tahun 1980-an hingga awal tahun 1990-an. Beberapa sumber
+              yang memberikan kontribusi pada popularitas istilah ini antara
+              lain:
+            </p>
+
+            <ol>
+              <li>
+                <p>
+                  Buku "Generasi X: Tales for an Accelerated Culture" oleh
+                  Douglas Coupland (1991): Buku ini merupakan salah satu sumber
+                  utama yang membawa istilah "Generasi X" ke dalam kesadaran
+                  publik. Douglas Coupland menggambarkan generasi yang lahir
+                  antara tahun 1960-an hingga 1980-an sebagai generasi yang
+                  terpisah dari norma-norma tradisional dan berjuang untuk
+                  menemukan identitas mereka dalam budaya yang berkembang dengan
+                  cepat.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Media Massa:</strong> Istilah "Generasi X" semakin
+                  tersebar melalui liputan media massa, seperti majalah, surat
+                  kabar, dan televisi. Artikel-artikel, wawancara, dan liputan
+                  tentang tren dan perilaku generasi ini membantu meningkatkan
+                  kesadaran tentang mereka di kalangan masyarakat umum.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Penelitian Demografis:</strong> Penelitian demografis
+                  dan sosial yang dilakukan oleh ahli demografi dan peneliti
+                  sosial membantu mengidentifikasi karakteristik dan tren
+                  generasi ini. Data-data demografis, seperti tingkat kelahiran,
+                  perkawinan, dan pekerjaan, digunakan untuk memahami generasi
+                  ini secara lebih mendalam.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Perkembangan Budaya Populer:</strong> Musik, film, dan
+                  budaya populer juga memainkan peran penting dalam membentuk
+                  citra Generasi X. Genre musik seperti punk rock, hip hop, dan
+                  grunge mencerminkan pengalaman dan sikap generasi ini.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Konsultan Pemasaran dan Perusahaan:</strong>
+                  Perusahaan-perusahaan pemasaran dan konsultan bisnis mulai
+                  memperhatikan generasi ini sebagai pasar yang signifikan.
+                  Penelitian pasar dan analisis konsumen membantu memahami
+                  preferensi, perilaku, dan kebutuhan Generasi X dalam hal
+                  produk dan layanan.
+                </p>
+              </li>
+            </ol>
+
+            <p>
+              Berdasarkan sumber-sumber ini, istilah "Generasi X" menjadi
+              semakin umum digunakan dan diterima secara luas untuk merujuk pada
+              generasi yang lahir antara tahun 1960-an hingga 1980-an. Meskipun
+              tidak ada sumber tunggal yang menciptakan istilah ini, kontribusi
+              dari berbagai media, penelitian, dan analisis membantu
+              mempopulerkannya dan membuatnya menjadi bagian penting dari bahasa
+              dan budaya populer.
+            </p>
+          </section>
+
+          <section>
+            <h3></h3>
+
+            <p>
+              Generasi X, yang lahir antara tahun 1960-an hingga awal 1980-an,
+              mengalami berbagai peristiwa sejarah yang membentuk pandangan
+              dunia dan pengalaman mereka. Berikut adalah beberapa kejadian
+              sejarah yang terjadi pada Generasi X:
+            </p>
+
+            <ol>
+              <li>
+                <p>
+                  <strong>Krisis Minyak (1970-an):</strong> Generasi X
+                  menyaksikan Krisis Minyak pada tahun 1970-an, yang menyebabkan
+                  lonjakan harga minyak dan inflasi tinggi di berbagai negara di
+                  seluruh dunia. Krisis ini memiliki dampak ekonomi yang
+                  signifikan dan mempengaruhi kehidupan sehari-hari banyak
+                  orang.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong
+                    >Perkembangan Teknologi Komputer (1970-an dan
+                    1980-an):</strong
+                  >
+                  Generasi X tumbuh dengan perkembangan teknologi komputer yang
+                  pesat, termasuk munculnya komputer pribadi dan perangkat
+                  elektronik konsumen lainnya. Mereka adalah generasi yang
+                  melihat awal dari revolusi digital.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Perang Dingin (1947-1991):</strong> Meskipun tidak
+                  mengalami perang dunia, Generasi X tumbuh dalam konteks
+                  persaingan global antara Blok Barat dan Blok Timur selama
+                  Perang Dingin. Ketegangan politik dan ketakutan akan konflik
+                  nuklir memberikan latar belakang penting bagi pandangan dunia
+                  mereka.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Peristiwa di Vietnam (1955-1975):</strong> Banyak dari
+                  Generasi X yang lahir pada tahun 1960-an terlibat dalam protes
+                  dan aktivisme anti-perang selama Perang Vietnam. Konflik ini
+                  membagi masyarakat dan mempengaruhi opini publik tentang
+                  kebijakan luar negeri dan keterlibatan militer.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong
+                    >Revolusi Teknologi dan Internet (1980-an dan
+                    1990-an):</strong
+                  >
+                  Generasi X adalah saksi dari munculnya internet dan
+                  perkembangan teknologi digital yang memengaruhi berbagai aspek
+                  kehidupan, termasuk komunikasi, hiburan, dan pekerjaan.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Pengembangan Musik dan Budaya Populer:</strong>
+                  Generasi X terpengaruh oleh perkembangan musik dan budaya
+                  populer pada era mereka, seperti punk rock, new wave, hip hop,
+                  dan grunge. Musik dan budaya populer ini mencerminkan sikap
+                  dan nilai-nilai mereka.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Revolusi Seksual dan Perubahan Sosial:</strong>
+                  Generasi X menyaksikan perubahan besar dalam pandangan
+                  masyarakat tentang seksualitas, gender, dan keluarga. Revolusi
+                  seksual dan pergerakan feminis memainkan peran penting dalam
+                  membentuk nilai-nilai dan norma-norma mereka.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Perubahan dalam Pendidikan dan Pekerjaan:</strong>
+                  Generasi X menyaksikan perubahan dalam sistem pendidikan dan
+                  pekerjaan, termasuk peningkatan akses ke pendidikan tinggi dan
+                  perubahan dalam struktur pekerjaan dan kehidupan kerja.
+                </p>
+              </li>
+            </ol>
+
+            <p>
+              Kejadian-kejadian ini, bersama dengan banyak lainnya, membentuk
+              pandangan dunia dan nilai-nilai Generasi X serta memengaruhi peran
+              mereka dalam masyarakat dan budaya kontemporer.
+            </p>
+          </section>
+        </article>
+
+        <article id="millenial">
+          <h2>Generasi Y <em>(Millennial)</em></h2>
+          <figure>
+            <img
+              class="img-position-center"
+              src="assets/img/millenials.jpg"
+              alt="three men laughing while looking in the laptop inside room"
+            />
+            <figcaption>
+              Photo by
+              <a
+                href="https://unsplash.com/@priscilladupreez?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Priscilla Du Preez 🇨🇦</a
+              >
+              on
+              <a
+                href="https://unsplash.com/photos/three-men-laughing-while-looking-in-the-laptop-inside-room-XkKCui44iM0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Unsplash</a
+              >
+            </figcaption>
+          </figure>
+          <p>
+            Generasi ini lahir sekitar awal 1980-an hingga pertengahan tahun
+            1990-an. Mereka adalah generasi yang tumbuh dengan teknologi digital
+            dan internet yang berkembang pesat. Generasi Y sering dianggap
+            sebagai generasi yang terliberalisasi secara sosial dan memiliki
+            minat dalam keseimbangan kerja-hidup serta keberlanjutan lingkungan.
+          </p>
+
+          <section>
+            <h3></h3>
+
+            <p>
+              Istilah <em>"Millennials"</em> atau "Generasi Y" juga menjadi
+              populer melalui berbagai media, penelitian, dan literatur pada
+              akhir tahun 1990-an hingga awal tahun 2000-an. Berbagai sumber
+              yang berkontribusi pada pemahaman dan popularitas istilah ini
+              meliputi:
+            </p>
+
+            <ol>
+              <li>
+                <p>
+                  <strong>Penelitian Demografis:</strong> Studi-studi yang
+                  dilakukan oleh ahli demografi dan peneliti sosial membantu
+                  dalam mengidentifikasi dan memahami karakteristik generasi
+                  ini. Data demografis tentang tingkat kelahiran, kebiasaan
+                  konsumsi, dan preferensi generasi ini digunakan untuk
+                  menggambarkan profil mereka.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Media Massa:</strong> Istilah
+                  <em>"Millennials"</em> sering kali digunakan dalam
+                  artikel-artikel di majalah, surat kabar, dan situs web berita
+                  untuk merujuk pada generasi yang lahir pada periode tertentu,
+                  biasanya antara awal tahun 1980-an hingga pertengahan tahun
+                  1990-an. Media massa memainkan peran penting dalam menyebarkan
+                  istilah ini kepada masyarakat luas.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Buku dan Publikasi:</strong> Buku-buku dan publikasi
+                  ilmiah juga telah menyumbangkan pemahaman tentang generasi
+                  ini. Penulis seperti Neil Howe dan William Strauss, dalam
+                  karya-karya seperti <em>"Generations"</em> dan
+                  <em>"Millennials Rising"</em>, membahas tentang ciri khas dan
+                  karakteristik generasi ini.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Analisis Pemasaran dan Konsumen:</strong> Industri
+                  pemasaran dan bisnis menggunakan istilah
+                  <em>"Millennials"</em> untuk mengidentifikasi segmen pasar
+                  yang penting. Analisis perilaku konsumen dan preferensi
+                  pembelian generasi ini membantu dalam pengembangan strategi
+                  pemasaran yang ditargetkan.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Penelitian Akademis:</strong> Ilmuwan sosial dan
+                  akademisi telah melakukan penelitian tentang tren dan
+                  perubahan yang dialami oleh generasi ini. Penelitian akademis
+                  ini memberikan wawasan lebih dalam tentang bagaimana
+                  faktor-faktor sosial, ekonomi, dan budaya memengaruhi generasi
+                  ini.
+                </p>
+              </li>
+            </ol>
+
+            <p>
+              Dengan kombinasi dari sumber-sumber ini, istilah
+              <em>"Millennials"</em>
+              menjadi semakin umum digunakan dan diterima secara luas untuk
+              merujuk pada generasi yang lahir antara awal tahun 1980-an hingga
+              pertengahan tahun 1990-an.
+            </p>
+          </section>
+
+          <section>
+            <h3></h3>
+
+            <p>
+              Generasi <em>millennial</em>, yang lahir sekitar awal tahun
+              1980-an hingga pertengahan tahun 1990-an, telah mengalami berbagai
+              peristiwa sejarah yang membentuk pandangan dunia dan pengalaman
+              mereka. Berikut adalah beberapa kejadian sejarah yang terjadi pada
+              generasi <em>millennial</em>:
+            </p>
+            <ol>
+              <li>
+                <p>
+                  <strong
+                    >Revolusi Teknologi dan Internet (1990-an -
+                    2000-an):</strong
+                  >
+                  <em>Millennial</em> adalah generasi yang tumbuh dengan
+                  perkembangan internet dan teknologi digital yang pesat. Mereka
+                  menyaksikan munculnya internet, email, media sosial, dan
+                  perangkat mobile yang telah mengubah cara kita berkomunikasi,
+                  bekerja, dan hidup.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Serangan 11 September 2001:</strong> Serangan teroris
+                  pada 11 September 2001 di Amerika Serikat, yang melibatkan
+                  pembajakan pesawat dan pengeboman World Trade Center dan
+                  Pentagon, adalah peristiwa bersejarah yang mengguncang dunia
+                  dan mempengaruhi pandangan keamanan dan politik global.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Perang di Afghanistan dan Irak:</strong> Setelah
+                  serangan 9/11, Amerika Serikat memulai perang di Afghanistan
+                  dan kemudian di Irak sebagai bagian dari perang melawan
+                  terorisme. Partisipasi dalam perang ini, baik sebagai personil
+                  militer maupun opini publik yang terbagi, memengaruhi banyak
+                  <em>millennial</em>.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Krisis Keuangan Global 2008:</strong> Krisis keuangan
+                  global yang dimulai pada tahun 2008 memiliki dampak yang luas
+                  di seluruh dunia. Turunnya pasar keuangan, kebangkrutan
+                  institusi keuangan, dan resesi ekonomi menghasilkan dampak
+                  jangka panjang terhadap pasar tenaga kerja dan kestabilan
+                  ekonomi global.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Perkembangan Teknologi dan Inovasi:</strong> Selain
+                  internet, <em>millennial</em> juga menyaksikan perkembangan
+                  teknologi lainnya seperti media sosial, ponsel pintar,
+                  streaming video, dan e-commerce yang telah mengubah cara kita
+                  hidup, bekerja, dan berinteraksi dengan dunia.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Perubahan Sosial dan Kultural:</strong>
+                  <em>Millennial</em>
+                  adalah generasi yang memainkan peran penting dalam
+                  mempromosikan keragaman, inklusivitas, dan kesadaran akan
+                  isu-isu sosial seperti perubahan iklim, hak-hak LGBT, dan
+                  kesetaraan gender.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Pemilihan Presiden Amerika Serikat:</strong>
+                  <em>Millennial</em> adalah pemilih yang signifikan dalam
+                  pemilihan presiden Amerika Serikat. Pemilihan presiden,
+                  termasuk pemilihan kontroversial tahun 2000 antara George W.
+                  Bush dan Al Gore, serta pemilihan Barack Obama sebagai
+                  presiden Amerika Serikat yang pertama kali berkulit hitam pada
+                  tahun 2008, mempengaruhi politik dan arah negara.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Perkembangan Budaya Populer:</strong> Musik, film, dan
+                  budaya populer juga memainkan peran penting dalam membentuk
+                  identitas <em>millennial</em>. Genre musik seperti hip hop,
+                  pop punk, dan EDM, serta serial TV dan film yang populer pada
+                  era ini, mencerminkan nilai-nilai dan pengalaman mereka.
+                </p>
+              </li>
+            </ol>
+
+            <p>
+              Kejadian-kejadian ini, bersama dengan banyak lainnya, membentuk
+              pandangan dunia dan nilai-nilai <em>millennial</em> serta
+              memengaruhi peran mereka dalam masyarakat dan budaya kontemporer.
+            </p>
+          </section>
+        </article>
+
+        <article id="z-generation">
+          <h2>Generasi Z</h2>
+          <figure>
+            <img
+              class="img-position-bottom"
+              src="assets/img/gen-z.jpg"
+              alt="a group of people posing for a photo in front of a house"
+            />
+            <figcaption>
+              Photo by
+              <a
+                href="https://unsplash.com/@omarlopez1?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Omar Lopez</a
+              >
+              on
+              <a
+                href="https://unsplash.com/photos/a-group-of-people-posing-for-a-photo-in-front-of-a-house-JEKprmVt86E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Unsplash</a
+              >
+            </figcaption>
+          </figure>
+          <p>
+            Generasi ini lahir sekitar pertengahan tahun 1990-an hingga awal
+            2010-an. Mereka adalah generasi yang tumbuh dengan teknologi digital
+            yang sudah mapan, seperti media sosial dan ponsel pintar. Generasi Z
+            sering dikenal sebagai generasi yang inklusif, kreatif, dan aktif
+            dalam aktivisme sosial.
+          </p>
+
+          <section>
+            <h3></h3>
+
+            <p>
+              Generasi Z adalah kelompok demografis yang lahir sekitar
+              pertengahan tahun 1990-an hingga awal tahun 2010-an. Istilah
+              "Generasi Z" atau "Gen Z" pertama kali muncul pada awal abad ke-21
+              untuk merujuk pada generasi yang lahir setelah Generasi Y
+              <em>(Millennials)</em>. Ada beberapa sumber yang menyumbang pada
+              pemahaman dan popularitas istilah ini:
+            </p>
+
+            <ol>
+              <li>
+                <p>
+                  <strong>Media Massa:</strong> Istilah "Generasi Z" sering
+                  digunakan dalam berbagai liputan media massa, termasuk
+                  artikel, laporan berita, dan program televisi yang membahas
+                  tentang karakteristik dan perilaku generasi muda yang lahir
+                  pada periode ini. Media massa memainkan peran penting dalam
+                  menyebarkan istilah ini kepada masyarakat luas.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Studi Demografis:</strong> Para ahli demografi dan
+                  peneliti sosial melakukan studi tentang tren dan karakteristik
+                  generasi ini. Penelitian demografis dan sosial membantu dalam
+                  mengidentifikasi atribut dan perilaku khas dari Generasi Z,
+                  termasuk preferensi konsumsi, nilai-nilai, dan cara
+                  berkomunikasi mereka.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Survei dan Penelitian:</strong> Banyak organisasi,
+                  seperti lembaga riset pasar, lembaga pemerintah, dan institusi
+                  pendidikan, melakukan survei dan penelitian tentang Generasi Z
+                  untuk memahami preferensi mereka dalam berbagai hal, termasuk
+                  teknologi, pendidikan, pekerjaan, dan gaya hidup.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Pengamatan dan Pengalaman Pribadi:</strong>
+                  Individu-individu yang terlibat langsung dengan Generasi Z,
+                  seperti orang tua, guru, pengusaha, dan pembuat kebijakan,
+                  menyumbangkan pengamatan dan pengalaman pribadi mereka dalam
+                  berinteraksi dengan generasi ini. Pengalaman langsung ini
+                  membantu dalam memahami karakteristik dan kebutuhan mereka.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Literatur dan Publikasi:</strong> Buku-buku, artikel,
+                  dan publikasi ilmiah juga menyumbang pada pemahaman tentang
+                  Generasi Z. Penulis, peneliti, dan akademisi mengulas tren dan
+                  isu-isu yang relevan dengan generasi ini, memberikan wawasan
+                  yang lebih dalam tentang identitas dan pengaruh mereka dalam
+                  masyarakat.
+                </p>
+              </li>
+            </ol>
+
+            <p>
+              Dengan bantuan sumber-sumber ini, istilah "Generasi Z" telah
+              menjadi semakin dikenal dan dipahami sebagai kelompok demografis
+              yang memiliki karakteristik unik dan berbeda dalam budaya dan
+              masyarakat kontemporer.
+            </p>
+          </section>
+
+          <section>
+            <h3></h3>
+
+            <p>
+              Generasi Z, yang lahir sekitar pertengahan tahun 1990-an hingga
+              awal tahun 2010-an, telah menyaksikan berbagai peristiwa sejarah
+              yang membentuk pandangan dunia dan pengalaman mereka. Berikut
+              adalah beberapa kejadian sejarah yang terjadi pada Generasi Z:
+            </p>
+
+            <ol>
+              <li>
+                <p>
+                  <strong>Serangan 11 September 2001:</strong> Serangan teroris
+                  pada 11 September 2001 di Amerika Serikat, yang melibatkan
+                  pembajakan pesawat dan pengeboman World Trade Center dan
+                  Pentagon, adalah peristiwa bersejarah yang mengguncang dunia.
+                  Meskipun sebagian besar Generasi Z mungkin terlalu muda untuk
+                  memahami sepenuhnya, peristiwa ini tetap memiliki dampak yang
+                  mendalam pada masyarakat global.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Perang di Afghanistan dan Irak:</strong> Setelah
+                  serangan 9/11, Amerika Serikat memulai perang di Afghanistan
+                  dan kemudian di Irak sebagai bagian dari perang melawan
+                  terorisme. Generasi Z tumbuh dalam konteks perang yang
+                  berlangsung lama ini, yang memiliki dampak yang luas baik di
+                  dalam negeri maupun di seluruh dunia.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Krisis Keuangan Global 2008:</strong> Krisis keuangan
+                  global yang dimulai pada tahun 2008 memiliki dampak yang
+                  signifikan pada Generasi Z. Turunnya pasar keuangan,
+                  kebangkrutan institusi keuangan, dan resesi ekonomi
+                  menyebabkan ketidakpastian ekonomi yang mempengaruhi peluang
+                  pekerjaan dan masa depan keuangan mereka.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Perkembangan Teknologi dan Internet:</strong> Generasi
+                  Z adalah generasi pertama yang tumbuh dewasa dengan internet
+                  yang telah menjadi semakin terintegrasi dalam kehidupan
+                  sehari-hari. Mereka tumbuh dengan teknologi digital yang
+                  berkembang pesat, seperti media sosial, ponsel pintar, dan
+                  platform online lainnya.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Perubahan Sosial dan Kultural:</strong> Generasi Z
+                  adalah generasi yang sangat terbuka terhadap keragaman dan
+                  inklusivitas. Mereka terlibat dalam gerakan sosial dan
+                  kultural yang memperjuangkan hak-hak minoritas, kesetaraan
+                  gender, dan isu-isu lingkungan.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Krisis Lingkungan dan Perubahan Iklim:</strong>
+                  Generasi Z adalah generasi yang semakin menyadari dan peduli
+                  terhadap krisis lingkungan dan perubahan iklim. Mereka
+                  terlibat dalam protes dan gerakan yang memperjuangkan
+                  perlindungan lingkungan dan keberlanjutan.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Pemilihan Presiden dan Politik Kontemporer:</strong>
+                  Generasi Z mulai memasuki tahap kedewasaan politik dan
+                  berpartisipasi dalam pemilihan presiden dan pemilihan umum
+                  lainnya di berbagai negara. Mereka terlibat dalam diskusi
+                  tentang isu-isu politik dan sosial yang relevan bagi masa
+                  depan mereka.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Pandemi COVID-19:</strong> Pandemi COVID-19 yang
+                  dimulai pada tahun 2019 telah menjadi salah satu peristiwa
+                  paling berpengaruh dalam sejarah Generasi Z. Pandemi ini telah
+                  mengubah cara hidup, pendidikan, dan pekerjaan mereka, serta
+                  menimbulkan ketidakpastian tentang masa depan.
+                </p>
+              </li>
+            </ol>
+
+            <p>
+              Kejadian-kejadian ini, bersama dengan berbagai peristiwa sejarah
+              lainnya, membentuk pandangan dunia dan nilai-nilai Generasi Z
+              serta memengaruhi peran mereka dalam masyarakat dan budaya
+              kontemporer.
+            </p>
+          </section>
+        </article>
+
+        <article id="alpha-generation">
+          <h2>Generasi <em>Alpha</em></h2>
+          <figure>
+            <img
+              class="img-position-center"
+              src="assets/img/gen-alpha.jpg"
+              alt="children running while laughing"
+            />
+            <figcaption>
+              Photo by
+              <a
+                href="https://unsplash.com/@phammi?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >MI PHAM</a
+              >
+              on
+              <a
+                href="https://unsplash.com/photos/girl-running-while-laughing-xtd3zYWxEs4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Unsplash</a
+              >
+            </figcaption>
+          </figure>
+          <p>
+            Generasi ini lahir sekitar awal 2010-an hingga pertengahan 2020-an.
+            Mereka adalah generasi pertama yang lahir dalam era di mana
+            teknologi digital sepenuhnya terintegrasi ke dalam kehidupan
+            sehari-hari. Meskipun masih muda, beberapa ciri yang telah teramati
+            adalah ketertarikan yang kuat pada teknologi dan kecenderungan
+            terhadap kesadaran lingkungan.
+          </p>
+
+          <section>
+            <h3></h3>
+
+            <p>
+              Generasi <em>Alpha</em> adalah kelompok demografis yang lahir
+              sekitar pertengahan tahun 2010-an hingga pertengahan tahun
+              2020-an. Meskipun mereka masih relatif muda, istilah "Generasi
+              <em>Alpha</em>" sudah mulai digunakan untuk merujuk pada generasi
+              yang lahir setelah Generasi Z. Beberapa sumber yang memberikan
+              kontribusi pada pemahaman dan popularitas istilah ini meliputi:
+            </p>
+
+            <ol>
+              <li>
+                <p>
+                  <strong>Penelitian Demografis:</strong> Penelitian demografis
+                  dan sosial yang dilakukan oleh ahli demografi dan peneliti
+                  sosial membantu dalam mengidentifikasi dan memahami
+                  karakteristik generasi ini. Meskipun masih terbatas, data
+                  demografis tentang kelahiran, geografi, dan tren populasi
+                  digunakan untuk merujuk pada Generasi <em>Alpha</em>.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Media Massa:</strong> Istilah "Generasi
+                  <em>Alpha</em>" mulai muncul dalam liputan media massa,
+                  seperti artikel, laporan berita, dan program televisi, yang
+                  membahas tentang karakteristik dan perilaku anak-anak yang
+                  lahir pada periode ini. Media massa memainkan peran penting
+                  dalam menyebarkan istilah ini kepada masyarakat luas.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Survei dan Penelitian:</strong> Banyak organisasi,
+                  seperti lembaga riset pasar, lembaga pemerintah, dan institusi
+                  pendidikan, melakukan survei dan penelitian tentang Generasi
+                  <em>Alpha</em> untuk memahami pola perilaku dan tren yang
+                  muncul dalam kelompok demografis ini.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Pengamatan dan Pengalaman Pribadi:</strong> Orang tua,
+                  pendidik, dan individu-individu yang terlibat langsung dengan
+                  Generasi <em>Alpha</em>, menyumbangkan pengamatan dan
+                  pengalaman pribadi mereka dalam berinteraksi dengan generasi
+                  ini. Pengalaman langsung ini membantu dalam memahami
+                  karakteristik, kebutuhan, dan preferensi generasi ini.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Perkembangan Teknologi dan Budaya:</strong> Generasi
+                  <em>Alpha</em> tumbuh dalam era di mana teknologi digital
+                  semakin terintegrasi dalam kehidupan sehari-hari. Mereka
+                  tumbuh dengan akses yang lebih besar terhadap perangkat
+                  elektronik, media sosial, dan konten digital lainnya
+                  dibandingkan generasi sebelumnya.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Literatur dan Publikasi:</strong> Meskipun masih
+                  sedikit, buku-buku, artikel, dan publikasi ilmiah telah mulai
+                  membahas tentang Generasi <em>Alpha</em>. Penulis, peneliti,
+                  dan akademisi memberikan wawasan tentang tren dan perubahan
+                  yang dialami oleh generasi ini dalam budaya dan masyarakat
+                  kontemporer.
+                </p>
+              </li>
+            </ol>
+
+            <p>
+              Dengan bantuan sumber-sumber ini, istilah "Generasi
+              <em>Alpha</em>" menjadi semakin dikenal dan dipahami sebagai
+              kelompok demografis yang memiliki karakteristik unik dalam
+              perkembangan sosial, budaya, dan teknologi di era kontemporer.
+            </p>
+          </section>
+
+          <section>
+            <h3></h3>
+
+            <p>
+              Generasi <em>Alpha</em>, yang lahir sekitar pertengahan tahun
+              2010-an hingga pertengahan tahun 2020-an, masih sangat muda dan
+              belum memiliki pengalaman hidup yang signifikan. Namun, ada
+              beberapa peristiwa dan tren yang telah mempengaruhi atau akan
+              mempengaruhi pengalaman mereka seiring berjalannya waktu. Berikut
+              adalah beberapa kejadian yang mungkin mempengaruhi Generasi
+              <em>Alpha</em>:
+            </p>
+
+            <ol>
+              <li>
+                <p>
+                  <strong>Pandemi COVID-19:</strong> Generasi
+                  <em>Alpha</em> akan dikenal sebagai generasi yang tumbuh dalam
+                  era pandemi COVID-19. Pandemi ini telah mengubah cara hidup,
+                  pendidikan, dan interaksi sosial mereka secara signifikan.
+                  Mereka mungkin akan mengalami efek jangka panjang dari pandemi
+                  ini dalam bentuk perubahan sosial, ekonomi, dan psikologis.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Perkembangan Teknologi:</strong> Generasi
+                  <em>Alpha</em> tumbuh dalam era di mana teknologi digital
+                  semakin terintegrasi dalam kehidupan sehari-hari. Mereka akan
+                  memiliki akses yang lebih besar terhadap perangkat elektronik,
+                  media sosial, dan konten digital dibandingkan generasi
+                  sebelumnya.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Perubahan Sosial dan Budaya:</strong> Generasi
+                  <em>Alpha</em>
+                  akan terpengaruh oleh perubahan sosial dan budaya yang terjadi
+                  di dunia mereka, termasuk perubahan dalam nilai-nilai,
+                  norma-norma, dan identitas budaya. Mereka akan tumbuh dalam
+                  masyarakat yang semakin terbuka terhadap keragaman dan
+                  inklusivitas.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Perubahan Lingkungan:</strong> Perubahan iklim dan
+                  kerusakan lingkungan akan menjadi faktor penting dalam
+                  pengalaman Generasi <em>Alpha</em>. Mereka mungkin akan
+                  menghadapi tantangan baru terkait dengan krisis lingkungan,
+                  keberlanjutan, dan upaya untuk menjaga bumi bagi generasi
+                  mendatang.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Kemajuan dalam Pendidikan:</strong> Generasi
+                  <em>Alpha</em>
+                  akan mengalami perkembangan dalam pendidikan, termasuk
+                  teknologi pembelajaran yang lebih canggih, akses yang lebih
+                  besar terhadap informasi, dan perubahan dalam pendekatan
+                  pembelajaran.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Perubahan dalam Pekerjaan dan Ekonomi:</strong>
+                  Generasi <em>Alpha</em> akan menghadapi tantangan dan peluang
+                  dalam pasar tenaga kerja yang terus berubah, termasuk
+                  perkembangan dalam teknologi otomatisasi dan digitalisasi,
+                  serta perubahan dalam model bisnis dan cara kerja.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <strong>Perkembangan Politik dan Ekonomi:</strong> Generasi
+                  <em>Alpha</em> akan menjadi pemilih dan konsumen yang penting
+                  dalam politik dan ekonomi di masa depan. Mereka akan terlibat
+                  dalam isu-isu seperti keadilan sosial, kesetaraan gender, dan
+                  keberlanjutan lingkungan.
+                </p>
+              </li>
+            </ol>
+
+            <p>
+              Meskipun Generasi <em>Alpha</em> masih muda, perkembangan masa
+              depan mereka akan dipengaruhi oleh berbagai peristiwa dan tren
+              yang terjadi di dunia saat ini dan dalam beberapa dekade
+              mendatang.
+            </p>
+          </section>
+        </article>
+      </div>
+
+      <aside>
+        <article id="about-me">
+          <h2>Tentang Saya</h2>
+          <table>
+            <tr>
+              <th>Nama</th>
+              <td>: Muhammad Randy</td>
+            </tr>
+            <tr>
+              <th>Domisili</th>
+              <td>: Kab. Banjar, Kal-Sel</td>
+            </tr>
+            <tr>
+              <th>Kontak</th>
+              <td>: +62858-2228-3507</td>
+            </tr>
+            <tr class="email">
+              <th>Email</th>
+              <td>: muhammadrandy0027@gmail.com</td>
+            </tr>
+          </table>
+        </article>
+        <article id="about-page">
+          <h2>Tentang Halaman Ini</h2>
+          <p>
+            Halaman ini dibuat untuk kepentingan belajar dan memenuhi
+            <em>submission</em>
+            dari <strong>Dicoding</strong>. Pengetahuan yang disampaikan pada
+            halaman ini <em>digenerate</em> dengan bantuan
+            <strong>ChatGPT</strong>, jadi mohon maaf jika terdapat kekeliruan.
+            Namun halaman web ini saya tulis sendiri sesuai dengan yang saya
+            pelajari pada <strong>Dicoding</strong> maupun website pendukung
+            lainnya seperti <strong>W3School</strong>.
+          </p>
+        </article>
+      </aside>
     </main>
+
+    <footer>
+      <p>Design and Code By Muhammad Randy &#169; 2024</p>
+    </footer>
+
+    <script>
+      const body = document.body;
+      const nav = document.getElementsByTagName("nav")[0];
+
+      // When the user clicks on the icon, toggle between dark mode (moon icon) and light mode (sun icon)
+      function toggle() {
+        body.classList.toggle("darkmode");
+      }
+
+      // When the user clicks, toggle between open and close menu
+      function openMenu() {
+        nav.classList.toggle("menu-open");
+      }
+
+      // add class "card" on all article tag except the first one using for loop
+      const articles = document.getElementsByTagName("article");
+
+      for (let i = 1; i < articles.length; i++) {
+        let article = articles[i];
+
+        article.classList.add("card");
+      }
+
+      // Make text on h3 tag if index is even make it 'Sejarah Istilah' if else make it 'Kejadian Bersejarah yang Terjadi'
+      const sectionTitles = document.getElementsByTagName("h3");
+
+      for (let i = 0; i < sectionTitles.length; i++) {
+        const sectionTitle = sectionTitles[i];
+
+        if (i % 2 == 0) {
+          sectionTitle.innerText = "Sejarah Istilah";
+        } else {
+          sectionTitle.innerText = "Kejadian Bersejarah yang Terjadi";
+        }
+      }
+    </script>
   </body>
 </html>

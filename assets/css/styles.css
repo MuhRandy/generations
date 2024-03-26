@@ -1,10 +1,335 @@
-img {
-  width: 100dvw;
-  height: 70dvh;
+:root {
+  --main-color: #000000;
+  --secondary-color: #f4dfc8;
+  --third-color: #f4eae0;
+  --fourth-color: #faf6f0;
+
+  /* darkmode */
+  --darkmode-primary: #222831;
+  --darkmode-secondary: #31363f;
+  --darkmode-third: #76abae;
+  --darkmode-fourth: #eeeeee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--fourth-color);
+}
+
+.darkmode {
+  background-color: var(--darkmode-secondary);
+}
+
+article p {
+  text-align: justify;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.profile img {
+  width: 200px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  background-color: var(--third-color);
+  color: var(--main-color);
+}
+
+.darkmode .card {
+  background-color: var(--darkmode-primary);
+  color: var(--darkmode-fourth);
+}
+
+.darkmode-toggle {
+  margin-right: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.sun {
+  font-size: 30px;
+  color: orange;
+}
+
+.darkmode .sun {
+  display: none;
+}
+
+.moon {
+  display: none;
+  font-size: 30px;
+  color: var(--darkmode-secondary);
+}
+
+.darkmode .moon {
+  display: block;
+}
+
+header {
+  display: inline;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: var(--third-color);
+  color: var(--main-color);
+  text-align: center;
+}
+
+.darkmode .jumbotron {
+  background-color: var(--darkmode-primary);
+  color: var(--darkmode-fourth);
+}
+
+.jumbotron p {
+  text-align: center;
+}
+
+nav {
+  background-color: var(--secondary-color);
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.darkmode nav {
+  background-color: var(--darkmode-third);
+}
+
+.menu {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.menu-open .menu {
+  display: block;
+}
+
+.menu ul {
+  background-color: var(--third-color);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.darkmode .menu ul {
+  background-color: var(--darkmode-third);
+  color: var(--darkmode-fourth);
+}
+
+.menu li {
+  padding: 0 20px;
+}
+
+hr {
+  width: 100%;
+  margin: 0;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+nav > ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  font-size: 18px;
+  color: var(--main-color);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.darkmode nav a {
+  color: var(--darkmode-fourth);
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 3;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+figure {
+  margin: 0;
+}
+
+figure img {
+  width: 100%;
+  max-height: 300px;
   object-fit: cover;
+}
+
+.img-position-center {
+  object-position: center;
+}
+
+.img-position-bottom {
   object-position: bottom;
 }
 
 figcaption {
   text-align: center;
+}
+
+aside {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+aside h2 {
+  text-align: center;
+}
+
+.email td {
+  text-wrap: nowrap;
+}
+
+th {
+  text-align: start;
+}
+
+footer {
+  padding: 2px;
+  color: var(--main-color);
+  background-color: var(--secondary-color);
+  text-align: center;
+  font-weight: bold;
+}
+
+.darkmode footer {
+  background-color: var(--darkmode-third);
+  color: var(--darkmode-fourth);
+}
+
+@keyframes enter {
+  from {
+    left: -200px;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+.menu ul {
+  animation-name: enter;
+  animation-duration: 500ms;
+  animation-timing-function: ease-out;
+}
+
+/* Device with widescreen 1200px and below*/
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+    padding: 20px 10vw;
+  }
+
+  main aside {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #about-me {
+    flex: 1;
+  }
+
+  #about-page {
+    flex: 1;
+  }
+}
+
+/* Device with widescreen 768px and below*/
+@media screen and (max-width: 768px) {
+  nav > ul {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  main aside {
+    align-self: center;
+    flex-direction: column;
+    max-width: 380px;
+  }
+
+  table {
+    font-size: 15px;
+  }
+
+  footer {
+    font-size: 15px;
+  }
+}
+
+/* Device with widescreen 375px and below*/
+@media screen and (max-width: 375px) {
+  main {
+    padding: 10px;
+  }
+
+  table,
+  .email {
+    font-size: 12px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
 }
